@@ -1,0 +1,89 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #fafafa;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+h2 {
+  color: #222;
+}
+
+.timeline-header {
+  background: linear-gradient(135deg, #00695c 0%, #26a69a 100%);
+  color: #fff;
+  border-radius: 8px;
+}
+
+.periodo {
+  position: relative;
+}
+
+.timeline {
+  position: relative;
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 10px;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background: linear-gradient(180deg, #1982c4, #ffca3a);
+  border-radius: 2px;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 30px;
+  padding-left: 30px;
+}
+
+.timeline-dot {
+  position: absolute;
+  left: 0;
+  top: 6px;
+  width: 16px;
+  height: 16px;
+  background: #ff6f61;
+  border-radius: 50%;
+  border: 4px solid white;
+  box-shadow: 0 0 10px rgba(0,0,0,0.15);
+}
+
+.timeline-content h5 {
+  margin-top: 0;
+  font-weight: 600;
+}
+
+.timeline-content p {
+  margin: 5px 0 0;
+  font-size: 0.95rem;
+}
+
+.timeline-content small {
+  display: block;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+/* Responsividade */
+@media (max-width: 992px) {
+  .timeline::before {
+    left: 5px;
+  }
+
+  .timeline-item {
+    padding-left: 25px;
+  }
+}

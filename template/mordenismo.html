@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Brasil em Cores - Modernismo</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- CSS Customizado -->
+  <link rel="stylesheet" href="../static/css/mordenismo.css">
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="../index.html">🎨 Brasil em Cores</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="../index.html">Início</a></li>
+          <li class="nav-item"><a class="nav-link active" href="mordenismo.html">Modernismo</a></li>
+          <li class="nav-item"><a class="nav-link" href="periodocolonial.html">Período Colonial</a></li>
+          <li class="nav-item"><a class="nav-link" href="imperioacademicismo.html">Império e Academicismo</a></li>
+          <li class="nav-item"><a class="nav-link" href="timeline.html">Linha do Tempo</a></li>
+          <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+          <li class="nav-item"><a class="nav-link" href="colaborar.html">Colabore</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- GALERIA DE OBRAS -->
+  <div class="container py-4">
+    <h2 class="mb-4 text-center">Obras em Destaque - Modernismo (1922–1950)</h2>
+
+    <div class="row g-4">
+
+      <!-- Obra 1 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="obra-card" onclick="toggleDescricao(1)">
+          <img src="../static/img/abaporu_.jpg" alt="Abaporu (1928)" class="obra-img">
+          <h5 class="obra-titulo">Abaporu (1928)</h5>
+          <p class="obra-artista">Tarsila do Amaral</p>
+        </div>
+        <div class="obra-descricao" id="desc-1">
+          <p>
+            Obra símbolo do movimento antropofágico. Com formas desproporcionais, representa a valorização do primitivo
+            e tropical na cultura brasileira.
+          </p>
+        </div>
+      </div>
+
+      <!-- Obra 2 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="obra-card" onclick="toggleDescricao(2)">
+          <img src="../static/img/o homem amarelo.jpeg.jpg" alt="O Homem Amarelo (1915-16)" class="obra-img">
+          <h5 class="obra-titulo">O Homem Amarelo (1915-16)</h5>
+          <p class="obra-artista">Anita Malfatti</p>
+        </div>
+        <div class="obra-descricao" id="desc-2">
+          <p>
+            Marco da ruptura com o academicismo. Retrata um homem com traços distorcidos e expressão melancólica,
+            influenciado pelo expressionismo alemão.
+          </p>
+        </div>
+      </div>
+
+      <!-- Obra 3 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="obra-card" onclick="toggleDescricao(3)">
+          <img src="../static/img/Cinco_moças_de_Guaratinguetá_-_Di_Cavalcanti_-_1930.jpg"
+            alt="Cinco Moças de Guaratinguetá (1930)" class="obra-img">
+          <h5 class="obra-titulo">Cinco Moças de Guaratinguetá (1930)</h5>
+          <p class="obra-artista">Di Cavalcanti</p>
+        </div>
+        <div class="obra-descricao" id="desc-3">
+          <p>
+            Pintura que exalta o cotidiano brasileiro com traços fortes, cores intensas e figuras populares femininas em
+            postura serena.
+          </p>
+        </div>
+      </div>
+
+      <!-- Obra 4 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="obra-card" onclick="toggleDescricao(4)">
+          <img src="../static/img/bananal.jpeg.jpg" alt="Bananal (1927)" class="obra-img">
+          <h5 class="obra-titulo">Bananal (1927)</h5>
+          <p class="obra-artista">Lasar Segall</p>
+        </div>
+        <div class="obra-descricao" id="desc-4">
+          <p>
+            Criada em 1928, "Abaporu" é uma das obras mais icônicas do modernismo brasileiro. O nome vem do tupi-guarani
+            e significa "homem que come gente". Inspirou o movimento antropofágico.
+          </p>
+        </div>
+      </div>
+
+      <!-- Obra 5 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="obra-card" onclick="toggleDescricao(5)">
+          <img src="../static/img/operarios.jpg" alt="Operários (1933)" class="obra-img">
+          <h5 class="obra-titulo">Operários (1933)</h5>
+          <p class="obra-artista">Tarsila do Amaral</p>
+        </div>
+        <div class="obra-descricao" id="desc-5">
+          <p>
+            "Operários", de 1933, representa o crescimento industrial de São Paulo e a diversidade étnica da classe
+            trabalhadora no Brasil.
+          </p>
+        </div>
+      </div>
+
+      <!-- Obra 6 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="obra-card" onclick="toggleDescricao(6)">
+          <img src="../static/img/Brecheret  -EVA 1.jpg" alt="Eva (1920s)" class="obra-img">
+          <h5 class="obra-titulo">Eva (1920s)</h5>
+          <p class="obra-artista">Victor Brecheret</p>
+        </div>
+        <div class="obra-descricao" id="desc-6">
+          <p>
+            Escultura modernista com linhas sinuosas e influência do art déco. Traz um corpo feminino idealizado,
+            ressignificando o nu na arte brasileira.
+          </p>
+        </div>
+      </div>
+
+      <!-- Obra 7 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="obra-card" onclick="toggleDescricao(7)">
+          <img src="../static/img/83-Di-Cavalcanti-–Samba---1.jpg" alt="Samba (1925)" class="obra-img">
+          <h5 class="obra-titulo">Samba (1925)</h5>
+          <p class="obra-artista">Di Cavalcanti</p>
+        </div>
+        <div class="obra-descricao" id="desc-7">
+          <p>
+            Cena urbana noturna com músicos e dançarinos, reforçando o estilo de vida carioca da época.
+          </p>
+        </div>
+      </div>
+
+      <!-- Obra 8 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="obra-card" onclick="toggleDescricao(8)">
+          <img src="../static/img/1200px-Benedito_Calixto_-_Paisagem_com_cruzeiro_(1920).jpg"
+            alt="Paisagem Brasileira (1925)" class="obra-img">
+          <h5 class="obra-titulo">Paisagem Brasileira (1925)</h5>
+          <p class="obra-artista">Benedito Calixto</p>
+        </div>
+        <div class="obra-descricao" id="desc-8">
+          <p>
+            Apesar de mais acadêmico, este quadro foi incorporado ao modernismo por sua representação idealizada do
+            Brasil natural.
+          </p>
+        </div>
+      </div>
+
+      <!-- Obra 9 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="obra-card" onclick="toggleDescricao(9)">
+          <img src="../static/img/autorretrato.jpeg.jpg" alt="Autorretrato (1922)" class="obra-img">
+          <h5 class="obra-titulo">Autorretrato (1922)</h5>
+          <p class="obra-artista">Anita Malfatti</p>
+        </div>
+        <div class="obra-descricao" id="desc-9">
+          <p>
+            Neste autorretrato delicado e introspectivo, Anita Malfatti utiliza cores suaves e formas fluidas para
+            construir uma imagem etérea de si mesma.
+          </p>
+        </div>
+      </div>
+
+      <!-- Obra 10 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="obra-card" onclick="toggleDescricao(10)">
+          <img src="../static/img/" alt="A Negra (1923)" class="obra-img">
+          <h5 class="obra-titulo">A Negra (1923)</h5>
+          <p class="obra-artista">Tarsila do Amaral</p>
+        </div>
+        <div class="obra-descricao" id="desc-10">
+          <p>
+            Figura imponente com traços africanos e geometrizados. A obra discute a identidade racial e a ancestralidade
+            brasileira, sendo uma das mais controversas e simbólicas de Tarsila.
+          </p>
+        </div>
+      </div>
+
+      <!-- Obra 11 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="obra-card" onclick="toggleDescricao(11)">
+          <img src="../static/img/" alt="O Mamoeiro (1925)" class="obra-img">
+          <h5 class="obra-titulo">O Mamoeiro (1925)</h5>
+          <p class="obra-artista">Anita Malfatti</p>
+        </div>
+        <div class="obra-descricao" id="desc-11">
+          <p>
+            Cores vibrantes e pinceladas expressivas representam uma árvore tropical, revelando a busca por uma estética
+            genuinamente brasileira.
+          </p>
+        </div>
+      </div>
+
+      <!-- Obra 12 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="obra-card" onclick="toggleDescricao(12)">
+          <img src="../static/img/" alt="Café (1935)" class="obra-img">
+          <h5 class="obra-titulo">Café (1935)</h5>
+          <p class="obra-artista">Candido Portinari</p>
+        </div>
+        <div class="obra-descricao" id="desc-12">
+          <p>
+            Representa o trabalho exaustivo dos lavradores de café. A crítica social e a força dos corpos revelam o
+            compromisso político do artista.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <footer class="bg-dark text-white text-center py-3">
+    © 2025 Brasil em Cores. Todos os direitos reservados.
+  </footer>
+
+  <script src="../static/js/mordenismo.js"></script>
+</body>
+
+</html>

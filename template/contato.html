@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contato - Brasil em Cores</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- EmailJS -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+  <!-- Estilo personalizado -->
+  <link rel="stylesheet" href="../static/css/contato.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="../index.html">🎨 Brasil em Cores</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="../index.html">Início</a></li>
+          <li class="nav-item"><a class="nav-link" href="mordenismo.html">Modernismo</a></li>
+          <li class="nav-item"><a class="nav-link" href="periodocolonial.html">Período Colonial</a></li>
+          <li class="nav-item"><a class="nav-link" href="imperioacademicismo.html">Império e Academicismo</a></li>
+          <li class="nav-item"><a class="nav-link" href="timeline.html">Linha do Tempo</a></li>
+          <li class="nav-item"><a class="nav-link active" href="contato.html">Contato</a></li>
+          <li class="nav-item"><a class="nav-link" href="colaborar.html">Colabore</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container py-5">
+    <h2 class="mb-4 text-center">Entre em Contato</h2>
+
+    <div class="row align-items-center">
+    <!-- Imagem -->
+    <div class="col-md-6 mb-4 mb-md-0 text-center">
+      <img src="https://images.unsplash.com/photo-1530122037265-a5f1f91d3b99?auto=format&fit=crop&w=600&q=80"
+           alt="Arte Brasileira" class="img-fluid rounded shadow">
+    </div>
+ 
+    <!-- Formulário -->
+    <div class="col-md-6">
+      <form id="form-contato">
+        <div class="mb-3">
+          <label for="nome" class="form-label">Nome:</label>
+          <input type="text" class="form-control" id="nome" name="nome" required>
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">E-mail:</label>
+          <input type="email" class="form-control" id="email" name="email" required>
+        </div>
+        <div class="mb-3">
+          <label for="assunto" class="form-label">Assunto:</label>
+          <input type="text" class="form-control" id="assunto" name="assunto" required>
+        </div>
+        <div class="mb-3">
+          <label for="mensagem" class="form-label">Mensagem:</label>
+          <textarea class="form-control" id="mensagem" name="mensagem" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+      </form>
+
+      <div id="msg-status" class="mt-3 text-center"></div>
+    </div>
+  </div>
+  </div>
+
+  <footer class="bg-dark text-white text-center py-3">
+    © 2025 Brasil em Cores. Todos os direitos reservados.
+  </footer>
+
+  <script src="../static/js/contato.js"></script>
+</body>
+</html>

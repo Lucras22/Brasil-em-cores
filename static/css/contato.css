@@ -1,0 +1,21 @@
+body {
+  background-color: #fdfdfd;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+h2 {
+  color: #333;
+}
+
+#form-contato {
+  width: 100%;
+}
+
+#msg-status {
+  font-weight: bold;
+}
+
+img {
+  max-height: 500px;
+  object-fit: cover;
+}

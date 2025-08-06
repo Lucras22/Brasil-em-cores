@@ -1,0 +1,87 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fefefe;
+  color: #333;
+}
+
+.hero {
+  position: relative;
+  height: 60vh;
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url('https://images.unsplash.com/photo-1504198453319-5ce911bafcde?auto=format&fit=crop&w=1400&q=80');
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  color: white;
+  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.7);
+}
+
+.hero .overlay {
+  display: none; /* não precisamos mais, já tem gradiente */
+}
+
+.hero .content {
+  position: relative;
+  z-index: 1;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.hero p.lead {
+  font-size: 1.3rem;
+  margin-bottom: 1.5rem;
+}
+
+.hero .btn {
+  padding: 0.75rem 2rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+  border-radius: 50px;
+  transition: background-color 0.3s ease;
+}
+
+.hero .btn:hover {
+  background-color: #0c6b0c;
+  color: #fff;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .hero {
+    height: 50vh;
+  }
+  .hero h1 {
+    font-size: 2rem;
+  }
+  .hero p.lead {
+    font-size: 1rem;
+  }
+  .hero .btn {
+    font-size: 1rem;
+    padding: 0.6rem 1.5rem;
+  }
+}
+
+.card-title {
+  color: #00695c;
+}
+
+footer {
+  font-size: 0.9rem;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+img {
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+}
