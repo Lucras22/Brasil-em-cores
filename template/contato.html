@@ -33,6 +33,7 @@
           <li class="nav-item"><a class="nav-link" href="timeline.html">Linha do Tempo</a></li>
           <li class="nav-item"><a class="nav-link active" href="contato.html">Contato</a></li>
           <li class="nav-item"><a class="nav-link" href="colaborar.html">Colabore</a></li>
+          <li class="nav-item"><a class="nav-link" href="../perfil.html">Perfil</a></li>
         </ul>
       </div>
     </div>
@@ -78,6 +79,17 @@
   <footer class="bg-dark text-white text-center py-3">
     © 2025 Brasil em Cores. Todos os direitos reservados.
   </footer>
+
+  <script>
+document.addEventListener("DOMContentLoaded", () => {
+  let path = window.location.pathname;
+  if (path.endsWith(".html")) {
+    let newPath = path.replace(".html", "");
+    window.history.replaceState(null, "", newPath);
+  }
+});
+</script>
+
 
   <script src="../static/js/contato.js"></script>
 </body>

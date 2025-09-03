@@ -37,6 +37,7 @@
           <li class="nav-item"><a class="nav-link" href="template/timeline.html">Linha do Tempo</a></li>
           <li class="nav-item"><a class="nav-link" href="template/contato.html">Contato</a></li>
           <li class="nav-item"><a class="nav-link" href="template/colaborar.html">Colabore</a></li>
+          <li class="nav-item"><a class="nav-link" href="perfil.html">Perfil</a></li>
         </ul>
       </div>
     </div>
@@ -155,6 +156,18 @@
 
   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
   <script src="home.js"></script>
+  <script src="static/js/auth.js"></script>
+
+  <script>
+document.addEventListener("DOMContentLoaded", () => {
+  let path = window.location.pathname;
+  if (path.endsWith(".html")) {
+    let newPath = path.replace(".html", "");
+    window.history.replaceState(null, "", newPath);
+  }
+});
+</script>
+
 </body>
 
 </html>
